@@ -57,7 +57,6 @@ router.post("/create", async(req, resp) => {
         }).catch((err) =>{
             resp.status(400).send({message: err.message}) 
         })
-        // resp.status(200).send(user)
 
     }).catch((err)=>{
         resp.status(400).send(err)
