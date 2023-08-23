@@ -65,7 +65,7 @@ router.post("/create", async(req, resp) => {
 })
 
 router.put("/update",(req, resp) => {
-    resp.send("updated Successfully..")
+    resp.status(200).send("updated Successfully..")
 });
 
 router.delete("/delete", (req, resp) => {
